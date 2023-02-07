@@ -1,0 +1,21 @@
+{
+    "name": "silnik/utils",
+    "description": "Silnik utils",
+    "author": "bieleski",
+    "type": "project",
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "require": {
+        "moneyphp/money": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Silnik\\Utils\\": "src/"
+        }
+    },
+    "scripts": {}
+}

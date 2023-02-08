@@ -4,7 +4,6 @@
     "author": "bieleski",
     "type": "project",
     "config": {
-        "sort-packages": true,
         "platform": {
             "php": "8.1"
         }
@@ -13,6 +12,7 @@
         "moneyphp/money": "^4.1",
         "verot/class.upload.php": "dev-master"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Silnik\\Utils\\": "src/"

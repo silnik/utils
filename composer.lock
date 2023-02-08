@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1798f4e2ad5cefacacaa3dc8ecb3849c",
+    "content-hash": "b4a2e6bb3fbe7e6385f9d7bf77467f8f",
     "packages": [
         {
             "name": "moneyphp/money",
@@ -94,12 +94,61 @@
                 "source": "https://github.com/moneyphp/money/tree/v4.1.0"
             },
             "time": "2022-12-19T20:35:32+00:00"
+        },
+        {
+            "name": "verot/class.upload.php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verot/class.upload.php.git",
+                "reference": "d8522fdaba5c86d74301f908da66b7814efa4960"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verot/class.upload.php/zipball/d8522fdaba5c86d74301f908da66b7814efa4960",
+                "reference": "d8522fdaba5c86d74301f908da66b7814efa4960",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/class.upload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Verot",
+                    "email": "colin@verot.net"
+                }
+            ],
+            "description": "This PHP class uploads files and manipulates images very easily.",
+            "homepage": "http://www.verot.net/php_class_upload.htm",
+            "keywords": [
+                "gd",
+                "upload"
+            ],
+            "support": {
+                "email": "colin@verot.net",
+                "issues": "https://github.com/verot/class.upload.php/issues",
+                "source": "https://github.com/verot/class.upload.php/tree/master"
+            },
+            "time": "2022-12-09T09:21:37+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "verot/class.upload.php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

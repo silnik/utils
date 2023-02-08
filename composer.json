@@ -9,8 +9,8 @@
         }
     },
     "require": {
-        "moneyphp/money": "^4.1",
-        "verot/class.upload.php": "dev-master"
+        "moneyphp/money": "4.1.0",
+        "verot/class.upload.php": "*"
     },
     "autoload": {
         "psr-4": {

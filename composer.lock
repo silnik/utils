@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6142522aead2d132ac404f5cdd0f8eac",
+    "content-hash": "7dd8b696defdcbb9f0dec0efec12507b",
     "packages": [
         {
             "name": "moneyphp/money",
@@ -97,22 +97,21 @@
         },
         {
             "name": "verot/class.upload.php",
-            "version": "dev-master",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verot/class.upload.php.git",
-                "reference": "d8522fdaba5c86d74301f908da66b7814efa4960"
+                "reference": "3c0ca9489d3662e9cccc597aedf70bac7dcca805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verot/class.upload.php/zipball/d8522fdaba5c86d74301f908da66b7814efa4960",
-                "reference": "d8522fdaba5c86d74301f908da66b7814efa4960",
+                "url": "https://api.github.com/repos/verot/class.upload.php/zipball/3c0ca9489d3662e9cccc597aedf70bac7dcca805",
+                "reference": "3c0ca9489d3662e9cccc597aedf70bac7dcca805",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -138,17 +137,15 @@
             "support": {
                 "email": "colin@verot.net",
                 "issues": "https://github.com/verot/class.upload.php/issues",
-                "source": "https://github.com/verot/class.upload.php/tree/master"
+                "source": "https://github.com/verot/class.upload.php/tree/2.1.3"
             },
-            "time": "2022-12-09T09:21:37+00:00"
+            "time": "2022-08-24T14:22:58+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "verot/class.upload.php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4a2e6bb3fbe7e6385f9d7bf77467f8f",
+    "content-hash": "6142522aead2d132ac404f5cdd0f8eac",
     "packages": [
         {
             "name": "moneyphp/money",
@@ -145,7 +145,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "verot/class.upload.php": 20
     },

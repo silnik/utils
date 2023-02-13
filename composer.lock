@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7dd8b696defdcbb9f0dec0efec12507b",
+    "content-hash": "67bbafcd2adfac2b957e0070c1475bb5",
     "packages": [
         {
             "name": "moneyphp/money",
@@ -151,7 +151,7 @@
     "platform": [],
     "platform-dev": [],
     "platform-overrides": {
-        "php": "8.1"
+        "php": "8.2"
     },
     "plugin-api-version": "2.3.0"
 }

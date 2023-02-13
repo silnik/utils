@@ -30,4 +30,22 @@ abstract class Server
             return false;
         }
     }
+
+    // Returns used memory (either in percent (without percent sign) or free and overall in bytes)
+    public static function getServerMemoryUsage()
+    {
+        $memoryTotal = ((int)ini_get('memory_limit') * 1024 * 1024);
+        $memoryUsage = memory_get_peak_usage();
+        $memoryFree = $memoryTotal - $memoryUsage;
+
+        if (is_null($memoryTotal) || is_null($memoryFree)) {
+            return null;
+        } else {
+            return [
+                'pct' => round((1 - ($memoryFree * 1 / $memoryTotal)), 5),
+                'total' => \Silnik\Utils\Measure::sizeFormat($memoryTotal),
+                'free' => \Silnik\Utils\Measure::sizeFormat($memoryFree),
+            ];
+        }
+    }
 }

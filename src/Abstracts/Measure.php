@@ -31,6 +31,7 @@ abstract class Measure
         }
     }
 
+
     /**
      * Formatação agradável para tamanhos de computador (Bytes).
      *

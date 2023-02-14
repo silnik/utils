@@ -90,7 +90,7 @@ abstract class Strings
 
     public static function enc($p, $c = false)
     {
-        $p = utf8_encode($p);
+        $p = mb_convert_encoding($p, 'UTF-8', 'ISO-8859-1');
         $d = '´´´';
         $l = strlen((string)$p);
         if ($l > 1) {

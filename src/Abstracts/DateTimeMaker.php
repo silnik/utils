@@ -4,6 +4,7 @@ namespace Silnik\Utils\Abstracts;
 
 abstract class DateTimeMaker
 {
+    public $dateOBJ;
     /**
      * A constant representing the number of seconds in a minute, for
      * making code more verbose
@@ -142,7 +143,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date d/m/y - 14/08/1992
+     * @return string d/m/y - 14/08/1992
      */
     public function dateBR($s = '/')
     {
@@ -150,7 +151,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date Y/m/d - 1992/08/14
+     * @return string Y/m/d - 1992/08/14
      */
     public function dateUS($s = '-')
     {
@@ -158,7 +159,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date d/m/Y H:i:s - 14/08/1992 13:45:28
+     * @return string d/m/Y H:i:s - 14/08/1992 13:45:28
      */
     public function dateTimeBR($d = '/', $h = ':')
     {
@@ -166,7 +167,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date Y-m-d H:i:s - 1992/08/14 13:45:28
+     * @return string Y-m-d H:i:s - 1992/08/14 13:45:28
      */
     public function dateTimeUS($d = '-', $h = ':')
     {
@@ -174,7 +175,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return timestamp 1434966025
+     * @return string 1434966025
      */
     public function timestamp($d = '-', $h = ':')
     {
@@ -182,7 +183,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date
+     * @return string
     */
     public function addDay($d)
     {
@@ -190,7 +191,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date
+     * @return string
     */
     public function addMonth($m)
     {
@@ -198,7 +199,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date
+     * @return string
     */
     public function addYear($y)
     {
@@ -206,21 +207,21 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date
+     * @return string
     */
     public function addHour($h)
     {
         return $this->getDateOBJ()->add(new \DateInterval('PT' . (int)$h . 'H'));
     }
     /**
-     * @return date
+     * @return string
     */
     public function addMinut($m)
     {
         return $this->getDateOBJ()->add(new \DateInterval('PT' . (int)$m . 'M'));
     }
     /**
-     * @return date
+     * @return string
     */
     public function addSecond($s)
     {
@@ -228,7 +229,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date
+     * @return string
     */
     public function subDay($d)
     {
@@ -236,7 +237,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date
+     * @return string
     */
     public function subMonth($m)
     {
@@ -244,7 +245,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date
+     * @return string
     */
     public function subYear($y)
     {
@@ -252,21 +253,21 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return date
+     * @return string
     */
     public function subHour($h)
     {
         return $this->getDateOBJ()->sub(new \DateInterval('PT' . (int)$h . 'H'));
     }
     /**
-     * @return date
+     * @return string
     */
     public function subMinut($m)
     {
         return $this->getDateOBJ()->sub(new \DateInterval('PT' . (int)$m . 'M'));
     }
     /**
-     * @return date
+     * @return string
     */
     public function subSecond($s)
     {
@@ -274,7 +275,7 @@ abstract class DateTimeMaker
     }
 
     /**
-     * @return America/Sao_Paulo
+     * @return string ex America/Sao_Paulo
      */
     public function timeZone()
     {

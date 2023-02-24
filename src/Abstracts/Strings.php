@@ -87,11 +87,17 @@ abstract class Strings
         return strip_tags(substr($string, 0, $chars) . $ret);
     }
 
-
-    public static function enc($p, $c = false)
+    /**
+     * enc
+     *
+     * @param string $p password
+     * @param boolean $c add sha1
+     * @return string
+     */
+    public static function enc(string $p, $c = false): string
     {
         $p = mb_convert_encoding($p, 'UTF-8', 'ISO-8859-1');
-        $d = '´´´';
+        $d = ';;;';
         $l = strlen((string)$p);
         if ($l > 1) {
             for ($i = 0;$i < $l;$i++) {
@@ -109,7 +115,7 @@ abstract class Strings
         $p = substr($p, $di, $l) . substr($p, 0, $di);
         $p = base64_encode($p);
         if ($c) {
-            $p = md5($p);
+            $p = sha1($p);
         }
 
         return $p;
